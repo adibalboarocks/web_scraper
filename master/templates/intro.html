@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Scraper - Python Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3c384;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            text-align: center;
+        }
+        
+        h1 {
+            color: #fff;
+            font-size: 28px;
+        }
+        
+        p {
+            color: #050505;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3224ae;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Web Scraper - Python Tool</h1>
+        
+        <p>This tool is designed for scraping information from four dedicated websites that provide insights into the telecom industry.</p>
+        
+        <p>With this tool, you can perform web scraping in two ways:</p>
+        
+        <ol>
+            <li>By specifying a date range, you can scrape news articles published within that period.</li>
+            <li>Alternatively, you can scrape articles directly from the first page of the news section, including their summaries and links.</li>
+        </ol>
+        
+        <p>The tool will scrape the headlines and paragraphs from the web pages, consolidate the data, and present the results on a separate page.</p>
+        
+        <p>To get started, simply click the button below:</p>
+        
+        <a href="{{ url_for('base_page') }}" class="button">Home</a>
+    </div>
+</body>
+</html>
